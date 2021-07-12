@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -14,55 +19,129 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="container">
 
-  We are creatives
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__logo"><img src="images/logo.svg" alt="Sunnyside logo"></a>
+        <img class="header__burger" src="images/icon-hamburger.svg" alt="Hamburger icon">
+        <ul class="header__pages">
+          <div class="header__triangle"></div>
+          <li><a href="#" class="header__link">About</a></li>
+          <li><a href="#" class="header__link">Services</a></li>
+          <li id="pad-bot"><a href="#" class="header__link">Projects</a></li>
+          <li><a href="#" class="header__link--button">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__h1"> We are creatives</h1>
+      <img class="header__arrow" src="images/icon-arrow-down.svg" alt="arrow down">
+    </header>
 
-  Transform your brand
+    <div class="main">
+      <img class="main__img" src="images/mobile/image-transform.jpg" alt="egg">
+      <img class="main__img--desktop" src="images/desktop/image-transform.jpg" alt="egg">
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+      <section class="main__section main__section--desktop transform">
+        <div class="main__inner">
+          <h2 class="main__h2">Transform your brand</h2>
+          <p class="main__p">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a class="main__link" href="#">Learn more</a>
+          <div class="main__underline main__underline--yellow"></div>
+        </div>
+      </section>
 
-  Learn more
+      <img class="main__img" src="images/mobile/image-stand-out.jpg" alt="pink champagne cup">
+      <img class="main__img--desktop" src="images/desktop/image-stand-out.jpg" alt="pink champagne cup">
+      
+      <section class="main__section main__section--desktop">
+        <div class="main__inner">
+          <h2 class="main__h2">Stand out to the right audience</h2>
+          <p class="main__p">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="main__link" href="#">Learn more</a>
+          <div class="main__underline main__underline--red"></div>
+        </div>
+      </section>
 
-  Stand out to the right audience
+      <section class="main__section main__section--pic graphic-design">
+        <h2 class="main__h2 main__h2--bottom">Graphic design</h2>
+        <p class="main__p main__p--bottom">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </section>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      <section class="main__section main__section--pic photography">
+        <h2 class="main__h2 main__h2--bottom">Photography</h2>
+        <p class="main__p main__p--bottom">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </section>
+    </div>
 
-  Learn more
+    <div class="test">
+      <h3 class="test__h3">Client Testimonials</h3>
+      <div class="test__outer">
+        <div class="test__inner">
+          <img class="test__img" src="images/image-emily.jpg" alt="Emily">
+          <p class="test__p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h4 class="test__name">Emily R.</h4>
+          <h5 class="test__job">Marketing Director</h5>
+        </div>
+  
+        <div class="test__inner">
+          <img class="test__img" src="images/image-thomas.jpg" alt="Thomas">
+          <p class="test__p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h4 class="test__name">Thomas S.</h4>
+          <h5 class="test__job">Chief Operating Officer</h5>
+        </div>
+  
+        <div class="test__inner">
+          <img class="test__img" src="images/image-jennie.jpg" alt="Jennie">
+          <p class="test__p">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h4 class="test__name">Jennie F.</h4>
+          <h5 class="test__job">Business Owner</h5>
+        </div>
+      </div>
+    </div>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+    <div class="gallery">
+      <img class="gallery__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles">
+      <img class="gallery__img" src="images/mobile/image-gallery-orange.jpg" alt="Orange">
+      <img class="gallery__img" src="images/mobile/image-gallery-cone.jpg" alt="Ice cream cone">
+      <img class="gallery__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
+    </div>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+    <div class="gallery-desktop">
+      <img class="gallery-desktop__img" src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
+      <img class="gallery-desktop__img" src="images/desktop/image-gallery-orange.jpg" alt="Orange">
+      <img class="gallery-desktop__img" src="images/desktop/image-gallery-cone.jpg" alt="Ice cream cone">
+      <img class="gallery-desktop__img" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
+    </div>
+    
+    <footer class="footer">
+      <img class="footer__logo" src="images/logo.svg" alt="Logo">
+      <nav class="footer__nav">
+        <ul class="footer__links-cont">
+          <li><a class="footer__link"  href="#">About</a></li>
+          <li><a class="footer__link"  href="#">Services</a></li>
+          <li><a class="footer__link"  href="#">Projects</a></li>
+        </ul>
 
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
+        <div class="footer__social-cont">
+          <a class="footer__social" href="#"><img src="images/icon-facebook.svg" alt="Facebook logo"></a>
+          <a class="footer__social" href="#"><img src="images/icon-instagram.svg" alt="Instagram logo"></a>
+          <a class="footer__social" href="#"><img src="images/icon-twitter.svg" alt="Twitter logo"></a>
+          <a class="footer__social" href="#"><img src="images/icon-pinterest.svg" alt ="Pinterest logo"></a>
+        </div>
+      </nav>
+    </footer>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
