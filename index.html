@@ -24,95 +24,112 @@
   <div class="container">
 
     <header class="header">
-      <h1 class="header__h1"> We are creatives</h1>
-      <img class="header__arrow" src="images/icon-arrow-down.svg" alt="arrow down">
+      <nav class="header__nav">
+        <a href="#" class="header__logo"><img src="images/logo.svg" alt="Sunnyside logo"></a>
+        <img class="header__burger" src="images/icon-hamburger.svg" alt="Hamburger icon">
+        <ul class="header__pages">
+          <div class="header__triangle"></div>
+          <li><a href="#" class="header__link">About</a></li>
+          <li><a href="#" class="header__link">Services</a></li>
+          <li id="pad-bot"><a href="#" class="header__link">Projects</a></li>
+          <li><a href="#" class="header__link--button">Contact</a></li>
+        </ul>
+      </nav> 
     </header>
-    
-    <nav class="header__nav">
-      <a href="#" class="header__logo"><img src="images/logo.svg" alt="Sunnyside logo"></a>
-      <img class="header__burger" src="images/icon-hamburger.svg" alt="Hamburger icon">
-      <ul class="header__pages">
-        <div class="header__triangle"></div>
-        <li><a href="#" class="header__link">About</a></li>
-        <li><a href="#" class="header__link">Services</a></li>
-        <li id="pad-bot"><a href="#" class="header__link">Projects</a></li>
-        <li><a href="#" class="header__link--button">Contact</a></li>
-      </ul>
-    </nav>
+     
+
+    <section class="hero">
+      <h1 class="hero__h1"> We are creatives</h1>
+      <img class="hero__arrow" src="images/icon-arrow-down.svg" alt="arrow down">
+    </section>
+
 
     <div class="main">
-      <img class="main__img" src="images/mobile/image-transform.jpg" alt="egg">
-      <img class="main__img--desktop" src="images/desktop/image-transform.jpg" alt="egg">
-
-      <section class="main__section main__section--desktop transform">
-        <div class="main__inner">
-          <h2 class="main__h2">Transform your brand</h2>
-          <p class="main__p">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <a class="main__link" href="#">Learn more</a>
-          <div class="main__underline main__underline--yellow"></div>
-        </div>
-      </section>
-
-      <img class="main__img" src="images/mobile/image-stand-out.jpg" alt="pink champagne cup">
-      <img class="main__img--desktop" src="images/desktop/image-stand-out.jpg" alt="pink champagne cup">
+ 
       
-      <section class="main__section main__section--desktop">
-        <div class="main__inner">
-          <h2 class="main__h2">Stand out to the right audience</h2>
-          <p class="main__p">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-          <a class="main__link" href="#">Learn more</a>
-          <div class="main__underline main__underline--red"></div>
+      <section class="card__section card__section--desktop">
+        <div class="card__inner--images egg-div">
+          <img class="card__img" src="images/mobile/image-transform.jpg" alt="egg">
+          <img class="card__img--desktop" src="images/desktop/image-transform.jpg" alt="egg">
+        </div>
+        <div class="card__inner egg-text-div">
+          <h2 class="card__h2">Transform your brand</h2>
+          <p class="card__p">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a class="card__link" href="#">Learn more</a>
+          <div class="card__underline card__underline--yellow"></div>
         </div>
       </section>
 
-      <section class="main__section main__section--pic graphic-design">
-        <h2 class="main__h2 main__h2--bottom">Graphic design</h2>
-        <p class="main__p main__p--bottom">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-      </section>
-
-      <section class="main__section main__section--pic photography">
-        <h2 class="main__h2 main__h2--bottom">Photography</h2>
-        <p class="main__p main__p--bottom">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-      </section>
-    </div>
-
-    <div class="test">
-      <h3 class="test__h3">Client Testimonials</h3>
-      <div class="test__outer">
-        <div class="test__inner">
-          <img class="test__img" src="images/image-emily.jpg" alt="Emily">
-          <p class="test__p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <h4 class="test__name">Emily R.</h4>
-          <h5 class="test__job">Marketing Director</h5>
+      
+      <section class="card__section card__section--desktop">
+        <div class="card__inner--images">
+          <img class="card__img" src="images/mobile/image-stand-out.jpg" alt="pink champagne cup">
+          <img class="card__img--desktop" src="images/desktop/image-stand-out.jpg" alt="pink champagne cup">
         </div>
+        <div class="card__inner">
+          <h2 class="card__h2">Stand out to the right audience</h2>
+          <p class="card__p">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="card__link" href="#">Learn more</a>
+          <div class="card__underline card__underline--red"></div>
+        </div>
+      </section>
+
+
+      <section class="card__section card__section--desktop">
+        <section class="graphic-design">
+          <h2 class="card__h2 card__h2--bottom">Graphic design</h2>
+          <p class="card__p card__p--bottom">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </section>
   
-        <div class="test__inner">
-          <img class="test__img" src="images/image-thomas.jpg" alt="Thomas">
-          <p class="test__p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <h4 class="test__name">Thomas S.</h4>
-          <h5 class="test__job">Chief Operating Officer</h5>
-        </div>
-  
-        <div class="test__inner">
-          <img class="test__img" src="images/image-jennie.jpg" alt="Jennie">
-          <p class="test__p">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <h4 class="test__name">Jennie F.</h4>
-          <h5 class="test__job">Business Owner</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="gallery">
-      <img class="gallery__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles">
-      <img class="gallery__img" src="images/mobile/image-gallery-orange.jpg" alt="Orange">
-      <img class="gallery__img" src="images/mobile/image-gallery-cone.jpg" alt="Ice cream cone">
-      <img class="gallery__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
-      <img class="gallery__img--desktop" src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
-      <img class="gallery__img--desktop" src="images/desktop/image-gallery-orange.jpg" alt="Orange">
-      <img class="gallery__img--desktop" src="images/desktop/image-gallery-cone.jpg" alt="Ice cream cone">
-      <img class="gallery__img--desktop" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
-    </div>
+        <section class="photography">
+          <h2 class="card__h2 card__h2--bottom">Photography</h2>
+          <p class="card__p card__p--bottom">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </section>
+      </section>
     
+
+      <section class="test">
+        <h3 class="test__h3">Client Testimonials</h3>
+        <div class="test__outer">
+          <div class="test__inner">
+            <img class="test__img" src="images/image-emily.jpg" alt="Emily">
+            <p class="test__p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <h4 class="test__name">Emily R.</h4>
+            <h5 class="test__job">Marketing Director</h5>
+          </div>
+    
+          <div class="test__inner">
+            <img class="test__img" src="images/image-thomas.jpg" alt="Thomas">
+            <p class="test__p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <h4 class="test__name">Thomas S.</h4>
+            <h5 class="test__job">Chief Operating Officer</h5>
+          </div>
+    
+          <div class="test__inner">
+            <img class="test__img" src="images/image-jennie.jpg" alt="Jennie">
+            <p class="test__p">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <h4 class="test__name">Jennie F.</h4>
+            <h5 class="test__job">Business Owner</h5>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="gallery">
+        <img class="gallery__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles">
+        <img class="gallery__img" src="images/mobile/image-gallery-orange.jpg" alt="Orange">
+        <img class="gallery__img" src="images/mobile/image-gallery-cone.jpg" alt="Ice cream cone">
+        <img class="gallery__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes">
+        <img class="gallery__img--desktop" src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles">
+        <img class="gallery__img--desktop" src="images/desktop/image-gallery-orange.jpg" alt="Orange">
+        <img class="gallery__img--desktop" src="images/desktop/image-gallery-cone.jpg" alt="Ice cream cone">
+        <img class="gallery__img--desktop" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar cubes">
+      </div>
+    
+    
+    </div>
+
+
     <footer class="footer">
       <img class="footer__logo" src="images/logo.svg" alt="Logo">
       <nav class="footer__nav">

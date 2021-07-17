@@ -5,9 +5,10 @@ $('.header__burger').click(function(){
     } else {
         nav.css('display', 'block');
     }
+    //nav.toggleClass('open')
 });
 
-$('.main__link').hover(function(){
+$('.card__link').hover(function(){
     const underline = $(this).next();
     console.log($(this).next());
     if (underline.css('opacity') !== '1') {
@@ -16,3 +17,4 @@ $('.main__link').hover(function(){
         underline.css('opacity', '0.25');
     }
 });
+

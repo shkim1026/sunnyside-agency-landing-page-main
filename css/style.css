@@ -1,4 +1,4 @@
-h1, h2, .main__link, .test__h3, .test__name {
+h1, h2, .card__link, .test__h3, .test__name, .header__link--button {
     font-family: 'Fraunces', serif;
 }
 h2 {
@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 }
 
+
 .header {
     background-image: url("../images/mobile/image-header.jpg");
     background-size: cover;
@@ -24,11 +25,11 @@ a {
 .header__nav {
     display: grid;
     grid-template-columns: auto auto;
+    margin: 0 auto;
     padding-top: 2rem;
     width: 90%;
     position: absolute;
     top: 0;
-    margin: 0 auto;
     left: 0;
     right: 0;
 }
@@ -37,6 +38,7 @@ a {
     align-self: center;
 }
 .header__burger {
+    z-index: 10;
     margin-left: auto;
 }
 .header__triangle {
@@ -63,6 +65,7 @@ a {
     margin-top: 30%;
     width: 100%;
     position: absolute;
+    z-index: 10;
 }
 .header__pages li {
     padding-top: 1rem;
@@ -74,7 +77,6 @@ a {
     background-color: hsl(51, 100%, 49%);
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 25px;
-    font-family: 'Fraunces', serif;
     color: black;
     text-transform: uppercase;
 }
@@ -84,78 +86,100 @@ a {
 #pad-bot {
     padding-bottom: 2rem;
 }
-.header__h1 {
-    margin-top: 0;
+
+
+.hero {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.hero__h1 {
+    margin-top: 30vh;
     font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 5px;
     color: white;
-    padding-top: 50%;
     padding-bottom: 1rem;
 }
-.header__arrow {
+.hero__arrow {
     margin: 0 auto;
 }
 
 
-.main, .test, .gallery {
+.main {
     max-width: 1400px;
     margin: 0 auto;
 }
-.main__img {
+.card__img {
     width: 100%;
 }
-.main__img--desktop {
+.card__img--desktop {
     display: none;
 }
-.main__section {
+.card__section {
     text-align: center;
+    text-align: -webkit-center;
     padding-bottom: 4rem;
 }
-.main__section--pic {
+.card__section--pic {
     background-size: cover;
     min-height: 536px;
     padding-bottom: 0rem;
 }
 .graphic-design {
     background-image: url("../images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+}
+.graphic-design h2,
+.graphic-design p {
     color: hsl(167, 40%, 24%);
 }
 .photography {
     background-image: url("../images/mobile/image-photography.jpg");
+    background-size: cover;
+}
+.photography h2,
+.photography p {
     color: hsl(198, 62%, 26%);
 }
 
-.main__h2, .main__p, .main__link {
+
+.card__inner {
+    align-self: center;
+    width: 80%;
+}
+.card__h2, .card__p, .card__link {
     color: hsl(212, 27%, 19%);
 }
-.main__h2 {
+.card__h2 {
     font-size: 2rem;
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.main__h2--bottom {
+.card__h2--bottom {
     padding-top: 25rem;
     margin-top: 0;
 }
-.main__p {
+.card__p {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 2rem;
     line-height: 30px;
     font-size: 18px;
 }
-.main__p--bottom {
+.card__p--bottom {
     padding-bottom: 3rem;
     margin-bottom: 0;
 }
-.main__link {
+.card__link {
     text-transform: uppercase;
     font-weight: 900;
     text-decoration: none;
 }
-.main__underline {
+.card__underline {
     position: relative;
     transform: translateY(-6px);
     z-index: -1;
@@ -164,10 +188,10 @@ a {
     border-radius: 25px;
     margin: 0 auto;
 }
-.main__underline--yellow {
+.card__underline--yellow {
     background: hsl(51, 100%, 49%);
 }
-.main__underline--red {
+.card__underline--red {
     background: hsl(7, 99%, 70%);
 }
 
@@ -177,7 +201,6 @@ a {
 }
 .test__h3 {
     text-transform: uppercase;
-    font-family: 'Fraunces', serif;
     letter-spacing: 3px;
     font-size: 16px;
     color: hsl(210, 4%, 67%);
@@ -260,8 +283,7 @@ a {
         background-position: center;
         min-height: 543px;
     }
-    .header__h1 {
-        padding-top: 3em;
+    .hero__h1 {
         font-size: 5rem;
     }
     .header__nav {
@@ -300,50 +322,52 @@ a {
     .header__link--button {
         background-color: white;
     }
-    .main {
+    .card__section {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .main__img {
+    .card__img {
         display: none;
     }
-    .main__img--desktop {
+    .card__img--desktop {
         display: block;
         width: 100%;
     }
-    .transform {
+    .card__section--desktop {
+        align-self: center;
+        padding-bottom: 0;
+    }
+    .egg-div {
+        grid-column-start: 2;
+    }
+    .egg-text-div {
         grid-column-start: 1;
         grid-row-start: 1;
     }
-    .main__section--desktop {
-        align-self: center;
-        padding-bottom: 1rem;
-    }
-    .main__inner {
+    .card__inner {
         text-align: initial;
-        width: 80%;
         margin: 0 auto;
     }
-    .main__h2 {
+    .card__h2 {
         padding-top: 0;
         font-size: 23px;
     }
-    .main__h2--bottom {
+    .card__h2--bottom {
         padding-top: 21rem;
     }
-    .main__p {
+    .card__p {
         font-size: 14px;
         line-height: 22px;
     }
-    .main__p--bottom {
+    .card__p--bottom {
         width: 70%;
         margin: 0 auto;
     }
-    .main__link {
+    .card__link {
         padding-left: 1.2rem;
         font-size: 12px;
     }
-    .main__underline {
+    .card__underline {
         margin: 0;
         margin-left: 1rem;
         width: 30%;
@@ -393,14 +417,14 @@ a {
     .header__nav {
         grid-template-columns: 50% 50%;
     }
-    .main__h2 {
+    .card__h2 {
         font-size: 2rem;
     }
-    .main__p {
+    .card__p {
         font-size: 1rem;
         line-height: 25px;
     }
-    .main__link {
+    .card__link {
         font-size: 1rem;
     }
  }
@@ -417,17 +441,17 @@ a {
         background-color: rgb(130, 223, 252);
         color: white;
     }
-    .header__h1 {
+    .hero__h1 {
         padding-bottom: 3rem;
     }
-    .main__p--bottom {
+    .card__p--bottom {
         width: 56%;
     }
-    .main__underline {
-        width: 26%;
+    .card__underline {
+        width: 22%;
     }
-    .main__underline--red,
-    .main__underline--yellow {
+    .card__underline--red,
+    .card__underline--yellow {
         opacity: 0.25;
     }
     .footer__links-cont {
