@@ -95,7 +95,7 @@ a {
     left: 0;
     right: 0;
 }
-.hero__h1 {
+.hero__title {
     margin-top: 30vh;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -150,27 +150,27 @@ a {
     align-self: center;
     width: 80%;
 }
-.card__h2, .card__p, .card__link {
+.card__title, .card__body, .card__link {
     color: hsl(212, 27%, 19%);
 }
-.card__h2 {
+.card__title {
     font-size: 2rem;
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.card__h2--bottom {
+.card__title--bottom {
     padding-top: 25rem;
     margin-top: 0;
 }
-.card__p {
+.card__body {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 2rem;
     line-height: 30px;
     font-size: 18px;
 }
-.card__p--bottom {
+.card__body--bottom {
     padding-bottom: 3rem;
     margin-bottom: 0;
 }
@@ -283,7 +283,7 @@ a {
         background-position: center;
         min-height: 543px;
     }
-    .hero__h1 {
+    .hero__title {
         font-size: 5rem;
     }
     .header__nav {
@@ -348,18 +348,18 @@ a {
         text-align: initial;
         margin: 0 auto;
     }
-    .card__h2 {
+    .card__title {
         padding-top: 0;
         font-size: 23px;
     }
-    .card__h2--bottom {
+    .card__title--bottom {
         padding-top: 21rem;
     }
-    .card__p {
+    .card__body {
         font-size: 14px;
         line-height: 22px;
     }
-    .card__p--bottom {
+    .card__body--bottom {
         width: 70%;
         margin: 0 auto;
     }
@@ -417,10 +417,10 @@ a {
     .header__nav {
         grid-template-columns: 50% 50%;
     }
-    .card__h2 {
+    .card__title {
         font-size: 2rem;
     }
-    .card__p {
+    .card__body {
         font-size: 1rem;
         line-height: 25px;
     }
@@ -441,10 +441,10 @@ a {
         background-color: rgb(130, 223, 252);
         color: white;
     }
-    .hero__h1 {
+    .hero__title {
         padding-bottom: 3rem;
     }
-    .card__p--bottom {
+    .card__body--bottom {
         width: 56%;
     }
     .card__underline {
